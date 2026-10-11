@@ -1,7 +1,8 @@
 ###### 전체 코드에서 과제가 아닌 부분은 모두 주석처리 했습니다.
 
 
-
+<br />
+<br />
 
 
 #### $1)$ 데이터 형식 (Data Types)
@@ -24,6 +25,8 @@ print(f"최종 점수: {score_int}점")
 score_int = float(score_str) * 100
 
 
+<br />
+<br />
 
 #### $3)$ Enumerate & Zip
 
@@ -46,7 +49,8 @@ for idx, student in enumerate(zip(students, scores), start=1):
 개선점 : 
 이전에는 for idx, name, score 변수를 3개를 선언해서 에러가 났었는데 변수를 개선해서 해결했습니다.
 
-
+<br />
+<br />
 
 #### $5)$ NumPy
 
@@ -68,7 +72,8 @@ print(np_arr_normalized)
 
 [0.   0.25 0.5  0.75 1.  ]
 
-
+<br />
+<br />
 
 2.4 NumPy 배열을 float32로 변환
 
@@ -79,7 +84,8 @@ np_arr_final = ((np_arr - np_arr.min()) / (np_arr.max() - np_arr.min())).astype(
 print(np_arr_final)
 print(np_arr_final.dtype)
 
-
+<br />
+<br />
 
 ##### 2. 학생 성적 분석 프로젝트
 
@@ -89,7 +95,8 @@ List Comprehension과 split()을 활용하여 학번과 이름이 결합된 문�
 
 student_names = [student.split("_")[1] for student in raw_students]
 
-
+<br />
+<br />
 
 2.2 전체 성적 데이터 출력
 
@@ -98,14 +105,16 @@ flatten()을 사용하여 5명 학생의 3개 과목 성적을 1차원 배열로
 all_scores = raw_scores.flatten()
 
 
-
+<br />
+<br />
 2.3 85점 이상 성적 개수 계산
 
 NumPy 조건 연산과 sum()을 활용하여 전체 15개 성적 중 85점 이상인 성적의 개수를 계산했습니다.
 
 over_85 = (all_scores >= 85).sum()
 
-
+<br />
+<br />
 
 2.4 학생별 평균 점수 계산
 
@@ -114,7 +123,8 @@ np.mean()과 axis=1을 이용하여 학생별 평균 점수를 계산했습니�
 student_means = np.mean(raw_scores, axis=1)
 
 
-
+<br />
+<br />
 2.5 최고 평균 학생 선정
 
 np.argmax()를 활용하여 평균 점수가 가장 높은 학생을 찾았습니다.
@@ -122,7 +132,8 @@ np.argmax()를 활용하여 평균 점수가 가장 높은 학생을 찾았습�
 top_student_idx = np.argmax(student_means)
 top_student_name = student_names[top_student_idx]
 
-
+<br />
+<br />
 
 2.6 단일 과목 최고 점수 분석
 
@@ -134,7 +145,8 @@ overall_max_subject = subjects[overall_max_idx % len(subjects)]
 overall_max_student = student_names[overall_max_idx // len(subjects)]
 
 
-
+<br />
+<br />
 #### 프로젝트 실행 결과
 
 1. 학생 명단: 짱구, 철수, 맹구, 유리, 훈이
@@ -149,7 +161,8 @@ overall_max_student = student_names[overall_max_idx // len(subjects)]
 
 6. 단일 과목 최고 점수: 100점 (과목: 수학, 학생: 맹구)
 
-
+<br />
+<br />
 
 #### 3. 실행 환경 및 의존성
 
@@ -165,7 +178,8 @@ overall_max_student = student_names[overall_max_idx // len(subjects)]
 
 python -m pip install numpy
 
-
+<br />
+<br />
 
 #### 4. 실행 방법
 
@@ -183,7 +197,8 @@ python 01_Linux-and-Python.py
 
 터미널에서 Python 기초 과제와 학생 성적 분석 결과를 확인합니다.
 
-
+<br />
+<br />
 
 #### 5. 참고 사항
 
