@@ -1,6 +1,8 @@
 Project01 - Python 및 NumPy를 활용한 학생 성적 분석
 
+
 1. 프로젝트 구현 내용
+
 
 1.1 학생 이름 추출
 
@@ -10,6 +12,7 @@ List Comprehension과 split() 함수를 활용했습니다.
 
 student_names = [student.split("_")[1] for student in raw_students]
 
+
 1.2 전체 성적 데이터 출력
 
 NumPy의 2차원 배열에 저장된 학생별 성적을 1차원 배열로 변환했습니다.
@@ -18,6 +21,7 @@ flatten() 함수를 사용하여 총 15개의 성적을 출력했습니다.
 
 all_scores = raw_scores.flatten()
 
+
 1.3 85점 이상 성적 개수 계산
 
 NumPy의 조건 연산과 sum() 함수를 활용했습니다.
@@ -25,6 +29,8 @@ NumPy의 조건 연산과 sum() 함수를 활용했습니다.
 전체 15개의 성적 중 85점 이상인 성적의 개수를 계산했습니다.
 
 over_85 = (all_scores >= 85).sum()
+
+
 
 1.4 학생별 평균 점수 계산
 
@@ -36,6 +42,8 @@ zip()을 사용하여 학생 이름과 평균 점수를 함께 출력했습니�
 
 student_means = np.mean(raw_scores, axis=1)
 
+
+
 1.5 최고 평균 학생 선정
 
 argmax() 함수를 사용하여 평균 점수가 가장 높은 학생의 인덱스를 찾았습니다.
@@ -44,6 +52,8 @@ argmax() 함수를 사용하여 평균 점수가 가장 높은 학생의 인덱�
 
 top_student_idx = np.argmax(student_means)
 top_student_name = student_names[top_student_idx]
+
+
 
 1.6 단일 과목 최고 점수 분석
 
@@ -57,6 +67,8 @@ overall_max_score = np.max(raw_scores)
 overall_max_idx = np.argmax(raw_scores)
 overall_max_subject = subjects[overall_max_idx % len(subjects)]
 overall_max_student = student_names[overall_max_idx // len(subjects)]
+
+
 
 2. 실행 환경 및 의존성
 
@@ -74,6 +86,8 @@ Python 3이 설치된 환경에서 다음 명령어를 실행합니다.
 
 python -m pip install numpy
 
+
+
 3. 실행 방법
 
 Python 3을 설치합니다.
@@ -90,6 +104,9 @@ python Project01/project01.py
 
 터미널에 출력된 학생별 성적 분석 결과를 확인합니다.
 
+
+
+
 4. 실행 결과
 
 1. 학생 명단: 짱구, 철수, 맹구, 유리, 훈이
@@ -103,6 +120,11 @@ python Project01/project01.py
 5. 최고 평균 수석 학생: 맹구 (96.67점)
 
 6. 단일 과목 최고 점수: 100점 (과목: 수학, 학생: 맹구)
+
+
+
+
+
 
 5. 참고 사항
 
