@@ -131,6 +131,10 @@ python Project01/hand_pottery_windows.py
 
 [전체 시연 영상 보기](demo/demo.mp4)
 
+## 전체 시연 영상
+
+
+https://github.com/user-attachments/assets/7527561d-5b10-4d1a-bfc0-db1a2f393605
 
 
 
