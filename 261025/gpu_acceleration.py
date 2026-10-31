@@ -259,7 +259,7 @@ plt.subplot(1,3,3), plt.imshow(output_cp_np, cmap="gray"), plt.title("Motion Tra
 
 for ax in plt.gcf().axes:
     ax.axis("off")
-
+plt.show()
 
 # ============================================================
 # 12. Convolution 실습 - 입력 이미지 확인
