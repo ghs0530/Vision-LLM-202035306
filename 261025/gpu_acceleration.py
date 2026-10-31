@@ -49,7 +49,7 @@ input_np = img_gray.astype(np.float32) / 255.0
 
 plt.imshow(input_np, cmap="gray")
 plt.axis("off");
-
+plt.show()
 
 # ============================================================
 # 4. 잔상 효과 함수 정의 (CPU - NumPy)
@@ -267,7 +267,7 @@ for ax in plt.gcf().axes:
 
 plt.imshow(input_np, cmap="gray")
 plt.axis("off");
-
+plt.show()
 
 # ============================================================
 # 13. Convolution 실습에 필요한 기존 CPU 함수 및 필터 정의
@@ -532,5 +532,5 @@ plt.subplot(2,3,6), plt.imshow(relu_dy_cp_np, cmap="gray"), plt.title("Horizonta
 
 for ax in plt.gcf().axes:
     ax.axis("off")
-
+    
 plt.show()
