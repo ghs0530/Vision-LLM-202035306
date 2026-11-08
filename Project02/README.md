@@ -220,3 +220,15 @@ src/audio/response.wav    # Piper 안내 음성
 - YOLO의 `bottle`은 페트병 전용 클래스가 아니므로 테스트 대상을 페트병으로 제한합니다.
 - 소음과 발음에 따라 STT 인식 결과가 달라질 수 있습니다.
 - 실제 물체 이동 없이 **좌우 방향만 안내**합니다.
+
+
+
+## 시연 영상
+
+[VoiceSort 전체 시연 영상 보기](Video%20Project%2021.mp4)
+
+
+## 프로젝트 발표자료
+
+[VoiceSort 프로젝트 발표자료 (PDF)](ai온디바이스.pdf)
+
