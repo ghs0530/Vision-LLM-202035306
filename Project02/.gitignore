@@ -1,0 +1,30 @@
+
+# AI 모델
+src/models/
+yolo11n.pt
+
+# Whisper.cpp
+whisper.cpp/
+
+# 음성 녹음 및 출력
+src/audio/
+
+# 실습 데이터
+src/datasets/
+
+# Python 가상환경
+.venv/
+.piper_venv/
+venv/
+
+# Python 캐시
+__pycache__/
+*.pyc
+
+# 환경변수 및 인증 정보
+.env
+.env.*
+
+# 운영체제 및 편집기 파일
+.DS_Store
+Thumbs.db
